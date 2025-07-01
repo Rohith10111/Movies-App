@@ -1,0 +1,54 @@
+.navbar {
+  background-color: #1a1d1e;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #ffffff; /* Default text color */
+}
+
+.navbar-brand a {
+  color: #951b23; /* Netflix red */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  color: #ffffff; /* Link text color */
+  text-decoration: none; /* Optional: remove underline */
+}
+
+.nav-link:hover {
+  background-color: rgba(64, 98, 142, 0.1);
+  color: #57849e; /* Optional: hover color */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-links {
+    gap: 1rem;
+  }
+
+  .nav-link {
+    padding: 0.5rem;
+  }
+}
